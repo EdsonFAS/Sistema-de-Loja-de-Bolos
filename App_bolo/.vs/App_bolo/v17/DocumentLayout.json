@@ -1,0 +1,328 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\context\\contextbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\context\\contextbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\tools\\impressao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\tools\\impressao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\components\\pages\\fazerpedido.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\components\\pages\\fazerpedido.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|c:\\users\\edson_fernando\\documents\\sistema-de-loja-de-bolos\\app_bolo\\app_bolo\\app_bolo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3762748B-257F-4CDE-B668-FABC360A61BB}|App_bolo\\App_bolo.csproj|solutionrelative:app_bolo\\app_bolo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PedidoService.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\PedidoService.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Services\\PedidoService.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\PedidoService.cs",
+              "RelativeToolTip": "App_bolo\\Services\\PedidoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T20:31:25.461Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "App_bolo\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "App_bolo\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T21:11:23.472Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "App_bolo\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Routes.razor",
+              "RelativeToolTip": "App_bolo\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T01:10:12.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "App_bolo\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "App_bolo\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T00:50:03.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Models\\Usuario.cs",
+              "RelativeToolTip": "App_bolo\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T00:42:07.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Impressao.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Tools\\Impressao.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Tools\\Impressao.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Tools\\Impressao.cs",
+              "RelativeToolTip": "App_bolo\\Tools\\Impressao.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwD4AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:25:08.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "App_bolo\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "App_bolo\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T23:12:33.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Program.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Program.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Program.cs",
+              "RelativeToolTip": "App_bolo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T17:47:10.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\App.razor",
+              "RelativeDocumentMoniker": "App_bolo\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\App.razor",
+              "RelativeToolTip": "App_bolo\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T01:08:04.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "App_bolo\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\_Imports.razor",
+              "RelativeToolTip": "App_bolo\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T01:15:04.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ContextBD.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Context\\ContextBD.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Context\\ContextBD.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Context\\ContextBD.cs",
+              "RelativeToolTip": "App_bolo\\Context\\ContextBD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:22:59.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProdutoService.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\ProdutoService.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Services\\ProdutoService.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\ProdutoService.cs",
+              "RelativeToolTip": "App_bolo\\Services\\ProdutoService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T19:51:44.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FazerPedido.razor",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Pages\\FazerPedido.razor",
+              "RelativeDocumentMoniker": "App_bolo\\Components\\Pages\\FazerPedido.razor",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Components\\Pages\\FazerPedido.razor",
+              "RelativeToolTip": "App_bolo\\Components\\Pages\\FazerPedido.razor",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T20:38:53.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "App_bolo\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T00:44:42.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Services\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Services\\ClienteService.cs",
+              "RelativeToolTip": "App_bolo\\Services\\ClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T17:42:26.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "App_bolo\\Models\\Clientes.cs",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\Models\\Clientes.cs",
+              "RelativeToolTip": "App_bolo\\Models\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:01:28.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\appsettings.json",
+              "RelativeDocumentMoniker": "App_bolo\\appsettings.json",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\appsettings.json",
+              "RelativeToolTip": "App_bolo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-15T17:48:14.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App_bolo.csproj",
+              "DocumentMoniker": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\App_bolo.csproj",
+              "RelativeDocumentMoniker": "App_bolo\\App_bolo.csproj",
+              "ToolTip": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\App_bolo.csproj",
+              "RelativeToolTip": "App_bolo\\App_bolo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T16:01:27.163Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

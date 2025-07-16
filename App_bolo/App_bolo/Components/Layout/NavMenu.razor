@@ -1,30 +1,44 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿<div class="top-row ps-3 navbar navbar-dark " style="background-color: #b81469;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">App_bolo</a>
+        <a class="navbar-brand" href="">Gestão Doce</a>
     </div>
 </div>
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+<div class="nav-scrollable " style="background-color: #b81469;" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="flex-column">
+
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="clientes">
+                <span class="bi bi-people-fill" aria-hidden="true"></span> Clientes
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+            <NavLink class="nav-link" href="produtos">
+                <span class="bi bi-box-seam" aria-hidden="true"></span> Produtos
             </NavLink>
         </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fazer-pedido">
+                <span class="bi bi-cart-plus" aria-hidden="true"></span> Fazer Pedido
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="pedidos">
+                <span class="bi bi-card-list" aria-hidden="true"></span> Pedidos
+            </NavLink>
+        </div>
+
     </nav>
 </div>
 

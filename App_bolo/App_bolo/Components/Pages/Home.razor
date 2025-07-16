@@ -1,7 +1,103 @@
 ﻿@page "/"
+@using App_bolo.Services;
+@using App_bolo.Models;
+@using App_bolo.Tools;
+@inject ProdutoService ProdutoService
+@inject ClienteService ClienteService
+@inject PedidoService PedidoService
+@inject IJSRuntime JSRuntime
+@inject NavigationManager navegacao;
 
-<PageTitle>Home</PageTitle>
+@rendermode InteractiveServer
 
-<h1>Hello, world!</h1>
+<script>
+    function NovaGuia(url) {
+        window.open(url, '_blank');
+    }
+</script>
 
-Welcome to your new app.
+
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Produtos Cadastrados</h5>
+                    <p class="card-text display-6">@totalProdutos</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Clientes Cadastrados</h5>
+                    <p class="card-text display-6">@totalClientes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col">
+            <div class="card text-white bg-warning">
+                <div class="card-body">
+                    <h5 class="card-title">Pedidos Realizados</h5>
+                    <p class="card-text display-6">@totalPedidos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-6 mb-3">
+            <button class="btn btn-outline-secondary w-100" @onclick="GerarRelatorioCadastro">
+                Relatório de Clientes e Produtos
+            </button>
+        </div>
+        <div class="col-md-6 mb-3">
+            <button class="btn btn-outline-dark w-100" @onclick="GerarRelatorioPedidos">
+                Relatório de Pedidos
+            </button>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private int totalProdutos;
+    private int totalClientes;
+    private int totalPedidos;
+    private List<Clientes> listClientes = new List<Clientes>();
+    private List<Produto> listProduto = new List<Produto>();
+    private List<Pedido> listPedidos = new List<Pedido>();
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        totalProdutos = (await ProdutoService.GetProdutosAsync()).Count;
+        totalClientes = (await ClienteService.GetClientesAsync()).Count;
+        totalPedidos = (await PedidoService.GetPedidosAsync()).Count;
+        listClientes = (await ClienteService.GetClientesAsync());
+        listProduto = (await ProdutoService.GetProdutosAsync());
+        listPedidos = (await PedidoService.GetPedidosAsync());
+    }
+
+
+
+    private async Task GerarRelatorioCadastro()
+    {   
+
+
+        Impressao imprimir = new Impressao();
+        imprimir.GerarImpressao(listClientes, listProduto, navegacao, JSRuntime);
+    }
+
+    private void GerarRelatorioPedidos()
+    {
+
+        Impressao imprimir = new Impressao();
+        imprimir.GerarImpressaoPed(listPedidos, navegacao, JSRuntime);
+    }
+}
+

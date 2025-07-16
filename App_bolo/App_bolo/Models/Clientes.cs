@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App_bolo.Models
 {
-    [Table("Cliente")]
+    [Table("Clientes")]
     public class Clientes
     {
+        [Key]
         [Column("id_cli")]
         public int Id_cli { get; set; }
 

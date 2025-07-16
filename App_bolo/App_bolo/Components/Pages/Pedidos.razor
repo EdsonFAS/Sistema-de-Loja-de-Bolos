@@ -1,0 +1,48 @@
+﻿@page "/pedidos"
+@using App_bolo.Services;
+@using App_bolo.Models;
+@inject PedidoService PedidoService
+
+<h3>Pedidos</h3>
+
+@if (pedidos == null)
+{
+    <p>Carregando...</p>
+}
+else if (!pedidos.Any())
+{
+    <p>Nenhum pedido encontrado.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Data</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in pedidos)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Cliente?.Nome_cli</td>
+                    <td>@p.DataPedido.ToShortDateString()</td>
+                    <td>@p.Itens.Sum(i => i.Produto.Preco * i.Quantidade).ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Pedido> pedidos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        pedidos = await PedidoService.GetPedidosAsync();
+    }
+}

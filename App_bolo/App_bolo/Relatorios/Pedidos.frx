@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/15/2025 21:17:32" ReportInfo.Modified="07/15/2025 21:37:03" ReportInfo.CreatorVersion="2025.2.0.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="lista1" ReferenceName="lista1" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="DataPedido" DataType="System.DateTime"/>
+      <Column Name="IdCliente" DataType="System.Int32"/>
+      <Column Name="Cliente" DataType="System.Int32">
+        <Column Name="Id_cli" DataType="System.Int32"/>
+        <Column Name="Nome_cli" DataType="System.String"/>
+        <Column Name="Email_cli" DataType="System.String"/>
+        <Column Name="Endereco_Cli" DataType="System.String"/>
+        <Column Name="Data_nasc_cli" DataType="System.DateTime"/>
+      </Column>
+      <BusinessObjectDataSource Name="Itens" DataType="System.Int32" Enabled="true">
+        <Column Name="Id" DataType="System.Int32"/>
+        <Column Name="IdPedido" DataType="System.Int32"/>
+        <Column Name="Pedido" DataType="System.Int32">
+          <Column Name="Id" DataType="System.Int32"/>
+          <Column Name="DataPedido" DataType="System.DateTime"/>
+          <Column Name="IdCliente" DataType="System.Int32"/>
+          <Column Name="Cliente" DataType="System.Int32">
+            <Column Name="Id_cli" DataType="System.Int32"/>
+            <Column Name="Nome_cli" DataType="System.String"/>
+            <Column Name="Email_cli" DataType="System.String"/>
+            <Column Name="Endereco_Cli" DataType="System.String"/>
+            <Column Name="Data_nasc_cli" DataType="System.DateTime"/>
+          </Column>
+          <BusinessObjectDataSource Name="Itens1" Alias="Itens" DataType="System.Int32" PropName="Itens" Enabled="true">
+            <Column Name="Id" DataType="System.Int32"/>
+            <Column Name="IdPedido" DataType="System.Int32"/>
+            <Column Name="Pedido" DataType="System.Int32">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="DataPedido" DataType="System.DateTime"/>
+              <Column Name="IdCliente" DataType="System.Int32"/>
+              <Column Name="Cliente" DataType="System.Int32">
+                <Column Name="Id_cli" DataType="System.Int32"/>
+                <Column Name="Nome_cli" DataType="System.String"/>
+                <Column Name="Email_cli" DataType="System.String"/>
+                <Column Name="Endereco_Cli" DataType="System.String"/>
+                <Column Name="Data_nasc_cli" DataType="System.DateTime"/>
+              </Column>
+              <BusinessObjectDataSource Name="Itens2" Alias="Itens" DataType="System.Int32" PropName="Itens" Enabled="true">
+                <Column Name="Id" DataType="System.Int32"/>
+                <Column Name="IdPedido" DataType="System.Int32"/>
+                <Column Name="Pedido" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataPedido" DataType="System.DateTime"/>
+                  <Column Name="IdCliente" DataType="System.Int32"/>
+                  <Column Name="Cliente" DataType="System.Int32">
+                    <Column Name="Id_cli" DataType="System.Int32"/>
+                    <Column Name="Nome_cli" DataType="System.String"/>
+                    <Column Name="Email_cli" DataType="System.String"/>
+                    <Column Name="Endereco_Cli" DataType="System.String"/>
+                    <Column Name="Data_nasc_cli" DataType="System.DateTime"/>
+                  </Column>
+                  <BusinessObjectDataSource Name="Itens3" Alias="Itens" DataType="System.Int32" PropName="Itens" Enabled="true">
+                    <Column Name="Id" DataType="System.Int32"/>
+                    <Column Name="IdPedido" DataType="System.Int32"/>
+                    <Column Name="Pedido" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataPedido" DataType="System.DateTime"/>
+                      <Column Name="IdCliente" DataType="System.Int32"/>
+                      <Column Name="Cliente" DataType="System.Int32">
+                        <Column Name="Id_cli" DataType="System.Int32"/>
+                        <Column Name="Nome_cli" DataType="System.String"/>
+                        <Column Name="Email_cli" DataType="System.String"/>
+                        <Column Name="Endereco_Cli" DataType="System.String"/>
+                        <Column Name="Data_nasc_cli" DataType="System.DateTime"/>
+                      </Column>
+                      <BusinessObjectDataSource Name="Itens4" Alias="Itens" DataType="System.Int32" PropName="Itens" Enabled="true">
+                        <Column Name="Id" DataType="System.Int32"/>
+                        <Column Name="IdPedido" DataType="System.Int32"/>
+                        <Column Name="Pedido" DataType="System.Int32"/>
+                        <Column Name="IdProduto" DataType="System.Int32"/>
+                        <Column Name="Produto" DataType="System.Int32"/>
+                        <Column Name="Quantidade" DataType="System.Int32"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <Column Name="IdProduto" DataType="System.Int32"/>
+                    <Column Name="Produto" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <Column Name="Descricao" DataType="System.String"/>
+                      <Column Name="Preco" DataType="System.Double"/>
+                      <Column Name="Peso" DataType="System.Double"/>
+                    </Column>
+                    <Column Name="Quantidade" DataType="System.Int32"/>
+                  </BusinessObjectDataSource>
+                </Column>
+                <Column Name="IdProduto" DataType="System.Int32"/>
+                <Column Name="Produto" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <Column Name="Descricao" DataType="System.String"/>
+                  <Column Name="Preco" DataType="System.Double"/>
+                  <Column Name="Peso" DataType="System.Double"/>
+                </Column>
+                <Column Name="Quantidade" DataType="System.Int32"/>
+              </BusinessObjectDataSource>
+            </Column>
+            <Column Name="IdProduto" DataType="System.Int32"/>
+            <Column Name="Produto" DataType="System.Int32">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="Nome" DataType="System.String"/>
+              <Column Name="Descricao" DataType="System.String"/>
+              <Column Name="Preco" DataType="System.Double"/>
+              <Column Name="Peso" DataType="System.Double"/>
+            </Column>
+            <Column Name="Quantidade" DataType="System.Int32"/>
+          </BusinessObjectDataSource>
+        </Column>
+        <Column Name="IdProduto" DataType="System.Int32"/>
+        <Column Name="Produto" DataType="System.Int32">
+          <Column Name="Id" DataType="System.Int32"/>
+          <Column Name="Nome" DataType="System.String"/>
+          <Column Name="Descricao" DataType="System.String"/>
+          <Column Name="Preco" DataType="System.Double"/>
+          <Column Name="Peso" DataType="System.Double"/>
+        </Column>
+        <Column Name="Quantidade" DataType="System.Int32"/>
+      </BusinessObjectDataSource>
+    </BusinessObjectDataSource>
+    <Relation Name="lista1_Itens" ParentDataSource="lista1" ChildDataSource="Itens" ParentColumns="Id&#13;&#10;IdCliente&#13;&#10;Itens" ChildColumns="Id&#13;&#10;Id&#13;&#10;IdProduto" Enabled="true"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Left="264.6" Top="9.45" Width="160.65" Height="18.9" Text="Relatório de Pedidos Realizados" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <DataBand Name="Data2" Top="82" Width="718.2" Height="179.55" Border.Lines="Bottom" DataSource="lista1">
+      <TextObject Name="Text10" Left="274.05" Top="103.95" Width="94.5" Height="18.9" Text="[lista1.Itens.Produto.Preco]" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Center" WordWrap="false" Font="Arial, 10pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text12" Left="425.25" Top="103.95" Width="94.5" Height="18.9" Text="[lista1.Itens.Produto.Peso]" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Center" WordWrap="false" Font="Arial, 10pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text14" Left="585.9" Top="103.95" Width="94.5" Height="18.9" Text="[lista1.Itens.Quantidade]" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text16" Left="37.8" Top="103.95" Width="170.1" Height="18.9" Text="[lista1.Itens.Produto.Descricao]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text9" Left="37.8" Top="66.15" Width="94.5" Height="18.9" Text="Produto" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text11" Left="274.05" Top="66.15" Width="94.5" Height="18.9" Text="Preço" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text13" Left="425.25" Top="66.15" Width="94.5" Height="18.9" Text="Peso" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text15" Left="585.9" Top="66.15" Width="94.5" Height="18.9" Text="Quantidade" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text17" Left="274.05" Top="9.45" Width="94.5" Height="18.9" Text="[lista1.Cliente.Nome_cli]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text18" Left="444.15" Top="9.45" Width="217.35" Height="18.9" Text="[lista1.Cliente.Endereco_Cli]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text19" Left="47.25" Top="9.45" Width="94.5" Height="18.9" Text="[lista1.DataPedido]" Format="Date" Format.Format="d" Font="Arial, 10pt, style=Bold"/>
+      <LineObject Name="Line1" Left="9.45" Top="37.8" Width="670.95"/>
+      <DataHeaderBand Name="DataHeader1" Top="41" Width="718.2" Height="37.8" Border.Lines="Bottom">
+        <TextObject Name="Text2" Left="274.05" Top="18.9" Width="94.5" Height="18.9" Text="Cliente" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text3" Left="444.15" Top="18.9" Width="94.5" Height="18.9" Border.Lines="Bottom" Text="Endereço" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text4" Left="47.25" Top="18.9" Width="94.5" Height="18.9" Text="Data" Font="Arial, 10pt, style=Bold"/>
+      </DataHeaderBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="264.75" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

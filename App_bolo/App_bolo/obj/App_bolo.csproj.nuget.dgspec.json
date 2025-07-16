@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Edson\\source\\repos\\App_bolo\\App_bolo\\App_bolo.csproj": {}
+    "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\App_bolo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Edson\\source\\repos\\App_bolo\\App_bolo\\App_bolo.csproj": {
+    "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\App_bolo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edson\\source\\repos\\App_bolo\\App_bolo\\App_bolo.csproj",
+        "projectUniqueName": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\App_bolo.csproj",
         "projectName": "App_bolo",
-        "projectPath": "C:\\Users\\Edson\\source\\repos\\App_bolo\\App_bolo\\App_bolo.csproj",
-        "packagesPath": "C:\\Users\\Edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edson\\source\\repos\\App_bolo\\App_bolo\\obj\\",
+        "projectPath": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\App_bolo.csproj",
+        "packagesPath": "C:\\Users\\Edson_Fernando\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Edson_Fernando\\Documents\\Sistema-de-Loja-de-Bolos\\App_bolo\\App_bolo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edson_Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +51,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "FastReport.OpenSource": {
+              "target": "Package",
+              "version": "[2025.2.0, )"
+            },
+            "FastReport.OpenSource.Export.PdfSimple": {
+              "target": "Package",
+              "version": "[2025.2.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -74,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

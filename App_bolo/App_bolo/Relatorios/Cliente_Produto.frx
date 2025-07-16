@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/15/2025 20:41:13" ReportInfo.Modified="07/15/2025 21:16:32" ReportInfo.CreatorVersion="2025.2.0.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="lista1" ReferenceName="lista1" DataType="System.Int32" Enabled="true">
+      <Column Name="Id_cli" DataType="System.Int32"/>
+      <Column Name="Nome_cli" DataType="System.String"/>
+      <Column Name="Email_cli" DataType="System.String"/>
+      <Column Name="Endereco_Cli" DataType="System.String"/>
+      <Column Name="Data_nasc_cli" DataType="System.DateTime"/>
+    </BusinessObjectDataSource>
+    <BusinessObjectDataSource Name="lista2" ReferenceName="lista2" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="Nome" DataType="System.String"/>
+      <Column Name="Descricao" DataType="System.String"/>
+      <Column Name="Preco" DataType="System.Double"/>
+      <Column Name="Peso" DataType="System.Double"/>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="75.6">
+      <TextObject Name="Text3" Left="198.45" Top="9.45" Width="302.4" Height="18.9" Text="Relatório de Cadastro " HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="78.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text2" Left="66.15" Width="94.5" Height="18.9" Text="Cliente" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text4" Left="226.8" Width="94.5" Height="18.9" Text="Email" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text5" Left="453.6" Width="94.5" Height="18.9" Text="Endereço" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="110.35" Width="718.2" Height="56.7" DataSource="lista1">
+      <TextObject Name="Text1" Left="66.15" Top="9.45" Width="94.5" Height="18.9" Text="[lista1.Nome_cli]" Font="Arial, 10pt"/>
+      <TextObject Name="Text14" Left="226.8" Top="9.45" Width="179.55" Height="18.9" Text="[lista1.Email_cli]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text15" Left="453.6" Top="9.45" Width="236.25" Height="18.9" Text="[lista1.Endereco_Cli]" HorzAlign="Center" Font="Arial, 10pt"/>
+    </DataBand>
+    <DataBand Name="Data2" Top="249.05" Width="718.2" Height="66.15" DataSource="lista2">
+      <TextObject Name="Text6" Left="28.35" Top="9.45" Width="94.5" Height="18.9" Text="[lista2.Nome]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text9" Left="472.5" Top="9.45" Width="94.5" Height="18.9" Text="[lista2.Preco]" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Center" WordWrap="false" Font="Arial, 10pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text11" Left="595.35" Top="9.45" Width="94.5" Height="18.9" Text="[lista2.Peso]" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Center" WordWrap="false" Font="Arial, 10pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text13" Left="179.55" Top="9.45" Width="245.7" Height="37.8" Text="[lista2.Descricao]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <DataHeaderBand Name="DataHeader1" Top="170.25" Width="718.2" Height="75.6" Border.Lines="Top" Border.Width="4">
+        <TextObject Name="Text7" Left="28.35" Top="37.8" Width="94.5" Height="18.9" Text="Produto" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text10" Left="472.5" Top="37.8" Width="94.5" Height="18.9" Text="Preco" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text12" Left="595.35" Top="37.8" Width="94.5" Height="18.9" Text="Peso" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text8" Left="179.55" Top="37.8" Width="245.7" Height="18.9" Text="Descricao" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </DataHeaderBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="318.4" Width="718.2" Height="103.95"/>
+  </ReportPage>
+</Report>

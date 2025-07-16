@@ -1,0 +1,190 @@
+﻿@page "/Produtos"
+@using App_bolo.Services;
+@using App_bolo.Models;
+@inject ProdutoService ProdutoService;
+@rendermode InteractiveServer
+@inject NavigationManager navegacao;
+
+<h1 class="mb-4">Produtos</h1>
+
+<div class="mb-3">
+    <button class="btn btn-success" style="background-color: #b81469;" @onclick="AbrirModal">Novo Produto</button>
+</div>
+
+@if (produtos is null)
+{
+    <div>Carregando...</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Peso</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in produtos)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Nome</td>
+                    <td>@p.Descricao</td>
+                    <td>@p.Preco.ToString("C")</td>
+                    <td>@p.Peso.ToString("F2") kg</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary me-1" @onclick="() => EditarProduto(p)">Editar</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => SolicitarConfirmacaoExclusao(p.Id, p.Nome)">Excluir</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<!-- MODAL DE PRODUTO -->
+@if (mostrarModal)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="display:block; background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@((modoEdicao ? "Editar" : "Novo") + " Produto")</h5>
+                    <button type="button" class="btn-close" @onclick="FecharModal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Nome</label>
+                        <input class="form-control" @bind="produtoAtual.Nome" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Descrição</label>
+                        <textarea class="form-control" @bind="produtoAtual.Descricao"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label>Preço</label>
+                        <input type="number" class="form-control" @bind="produtoAtual.Preco" step="0.01" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Peso (kg)</label>
+                        <input type="number" class="form-control" @bind="produtoAtual.Peso" step="0.01" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="FecharModal">Cancelar</button>
+                    <button class="btn btn-success" @onclick="SalvarProduto">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- MODAL DE CONFIRMAÇÃO -->
+@if (mostrarConfirmacao)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="display:block; background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar Exclusão</h5>
+                    <button type="button" class="btn-close" @onclick="CancelarExclusao"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tem certeza que deseja excluir o produto <strong>@nomeProdutoParaExcluir</strong>?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="CancelarExclusao">Cancelar</button>
+                    <button class="btn btn-danger" @onclick="ConfirmarExclusao">Sim, Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Produto>? produtos;
+    private Produto produtoAtual = new();
+    private bool mostrarModal = false;
+    private bool modoEdicao = false;
+
+    private bool mostrarConfirmacao = false;
+    private int idProdutoParaExcluir;
+    private string nomeProdutoParaExcluir = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregarProdutos();
+    }
+
+    private async Task CarregarProdutos()
+    {
+        produtos = await ProdutoService.GetProdutosAsync();
+    }
+
+    private void AbrirModal()
+    {
+        produtoAtual = new Produto();
+        modoEdicao = false;
+        mostrarModal = true;
+    }
+
+    private void EditarProduto(Produto produto)
+    {
+        produtoAtual = new Produto
+        {
+            Id = produto.Id,
+            Nome = produto.Nome,
+            Descricao = produto.Descricao,
+            Preco = produto.Preco,
+            Peso = produto.Peso
+        };
+        modoEdicao = true;
+        mostrarModal = true;
+    }
+
+    private async Task SalvarProduto()
+    {
+        if (modoEdicao)
+        {
+            await ProdutoService.UpdateProdutoAsync(produtoAtual);
+        }
+        else
+        {
+            await ProdutoService.AddProdutoAsync(produtoAtual);
+        }
+
+        mostrarModal = false;
+        await CarregarProdutos();
+    }
+
+    private void FecharModal()
+    {
+        mostrarModal = false;
+    }
+
+    private void SolicitarConfirmacaoExclusao(int id, string nome)
+    {
+        idProdutoParaExcluir = id;
+        nomeProdutoParaExcluir = nome;
+        mostrarConfirmacao = true;
+    }
+
+    private void CancelarExclusao()
+    {
+        mostrarConfirmacao = false;
+        idProdutoParaExcluir = 0;
+        nomeProdutoParaExcluir = "";
+    }
+
+    private async Task ConfirmarExclusao()
+    {
+        await ProdutoService.DeleteProdutoAsync(idProdutoParaExcluir);
+        mostrarConfirmacao = false;
+        await CarregarProdutos();
+    }
+}

@@ -1,0 +1,147 @@
+﻿@page "/fazer-pedido"
+@using App_bolo.Services;
+@using App_bolo.Models;
+@inject ClienteService ClienteService
+@inject ProdutoService ProdutoService
+@inject PedidoService PedidoService
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1 class="mb-4">Novo Pedido</h1>
+
+@if (clientes == null || produtos == null)
+{
+    <p>Carregando...</p>
+}
+else
+{
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="mb-3">
+                <label class="form-label">Cliente</label>
+                <select class="form-select" @bind="pedido.IdCliente">
+                    <option disabled selected value="">Selecione um cliente</option>
+                    @foreach (var c in clientes)
+                    {
+                        <option value="@c.Id_cli">@c.Nome_cli</option>
+                    }
+                </select>
+            </div>
+
+            <div class="row align-items-end g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Produto</label>
+                    <select class="form-select" @bind="produtoSelecionadoId">
+                        <option disabled selected value="">Selecione um produto</option>
+                        @foreach (var p in produtos)
+                        {
+                            <option value="@p.Id">@p.Nome</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Quantidade</label>
+                    <input type="number" min="1" class="form-control" @bind="quantidadeSelecionada" />
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary w-100 border-0" style="background-color: #b81469;" @onclick="AdicionarProduto">Adicionar Produto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (pedido.Itens.Any())
+    {
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in pedido.Itens)
+                    {
+                        <tr>
+                            <td>@item.Produto?.Nome</td>
+                            <td>@item.Produto?.Preco.ToString("C")</td>
+                            <td>@item.Quantidade</td>
+                            <td>
+                                @(((item.Produto?.Preco ?? 0) * item.Quantidade).ToString("C", new System.Globalization.CultureInfo("pt-BR")))
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-danger" @onclick="() => RemoverItem(item)">Remover</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-end mb-3">
+            <h5>Total do Pedido: <strong>@pedido.Itens.Sum(i => (i.Produto?.Preco ?? 0) * i.Quantidade).ToString("C")</strong></h5>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-success" @onclick="FinalizarPedido">Finalizar Pedido</button>
+        </div>
+    }
+}
+
+@code {
+    private List<Clientes>? clientes;
+    private List<Produto>? produtos;
+    private Pedido pedido = new();
+    private int produtoSelecionadoId;
+    private int quantidadeSelecionada = 1;
+
+    protected override async Task OnInitializedAsync()
+    {
+        clientes = await ClienteService.GetClientesAsync();
+        produtos = await ProdutoService.GetProdutosAsync();
+    }
+
+    private void AdicionarProduto()
+    {
+        if (produtoSelecionadoId == 0 || quantidadeSelecionada <= 0) return;
+
+        var produto = produtos.FirstOrDefault(p => p.Id == produtoSelecionadoId);
+        if (produto == null) return;
+
+        var itemExistente = pedido.Itens.FirstOrDefault(i => i.IdProduto == produto.Id);
+        if (itemExistente != null)
+        {
+            itemExistente.Quantidade += quantidadeSelecionada;
+        }
+        else
+        {
+            pedido.Itens.Add(new ItemPedido
+            {
+                IdProduto = produto.Id,
+                Produto = produto,
+                Quantidade = quantidadeSelecionada
+            });
+        }
+
+        produtoSelecionadoId = 0;
+        quantidadeSelecionada = 1;
+    }
+
+    private void RemoverItem(ItemPedido item)
+    {
+        pedido.Itens.Remove(item);
+    }
+
+    private async Task FinalizarPedido()
+    {
+        if (pedido.IdCliente == 0 || !pedido.Itens.Any())
+            return;
+        pedido.DataPedido = DateTime.Now;
+        await PedidoService.AddPedidoAsync(pedido);
+        Navigation.NavigateTo("/pedidos");
+    }
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App_bolo.Models
@@ -6,6 +7,7 @@ namespace App_bolo.Models
     [Table("Produto")]
     public class Produto
     {
+        [Key]
         [Column("id_prod")]
         public int Id { get; set; }
 
